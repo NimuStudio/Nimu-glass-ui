@@ -34,7 +34,7 @@ YSTI Glass UI 是一套**完整的 Web UI 体系**：玻璃拟态（Glassmorphis
 
 ## 在线演示
 
-**https://ystibdjmnm.github.io/ysti-glass-ui/**（GitHub Pages，配置方法见文末）
+👉 [https://ystibdjmnm.github.io/ysti-glass-ui/](https://ystibdjmnm.github.io/ysti-glass-ui/)（GitHub Pages，配置方法见文末）
 
 ## 快速开始
 

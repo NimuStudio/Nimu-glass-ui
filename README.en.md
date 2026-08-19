@@ -34,7 +34,7 @@ It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glas
 
 ## Live Demo
 
-**https://ystibdjmnm.github.io/ysti-glass-ui/** (GitHub Pages)
+👉 [https://ystibdjmnm.github.io/ysti-glass-ui/](https://ystibdjmnm.github.io/ysti-glass-ui/) (GitHub Pages)
 
 ## Quick Start
 
