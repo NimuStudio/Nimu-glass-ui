@@ -50,14 +50,44 @@ python -m http.server 8080
 
 ### 方式二：引入到你的项目
 
+**方法 A：CDN 一行引入（推荐，无需下载）**
+
 ```html
-<!-- 1. 引入核心样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/ysti-glass.css">
+<!-- 可选：液态玻璃背景特效 -->
+<script src="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/liquid-glass.js"></script>
+```
+
+**方法 B：下载到本地**
+
+把 `assets/ysti-glass.css` 复制到你的项目，然后：
+
+```html
 <link rel="stylesheet" href="ysti-glass.css">
+```
 
-<!-- 2.（可选）液态玻璃背景特效 -->
-<script src="liquid-glass.js"></script>
+**最简可运行示例**（保存为 html 打开即可看到效果）：
 
-<!-- 3.（可选）光标泛光 + 玻璃边缘高光（见 index.html 内注释） -->
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>我的页面</title>
+<link rel="stylesheet" href="ysti-glass.css">
+</head>
+<body>
+  <div class="order-card" style="max-width:380px;margin:48px auto;padding:26px">
+    <h3>我的玻璃卡片</h3>
+    <p style="color:var(--text-dim)">引入 ysti-glass.css 即可使用全部组件</p>
+    <div style="display:flex;gap:10px;margin-top:14px">
+      <button class="btn-accept">主操作</button>
+      <button class="btn-cancel">取消</button>
+    </div>
+  </div>
+  <!-- 试试加 <body class="dark-mode"> 看深色主题 -->
+</body>
+</html>
 ```
 
 不需要任何初始化代码，样式开箱即用。
@@ -80,6 +110,29 @@ python -m http.server 8080
 var theme = localStorage.getItem("ysti_theme") || "glass";
 // glass → light → dark 循环切换，写入 body class 与 localStorage
 ```
+
+## 组件清单
+
+| 组件 | 类名 | 说明 |
+|---|---|---|
+| 玻璃卡片 | `.order-card` | 通用玻璃卡片，hover 泛光 |
+| 主按钮 | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | 金色/青色渐变 |
+| 次按钮 | `.btn-cancel` | 轻量按钮 |
+| 登录页 | `.login-overlay` `.login-panel` `.login-field` `.login-btn` | 完整登录卡片 |
+| 弹窗 | `.modal-overlay` `.modal-panel` | 28px 圆角玻璃弹窗 |
+| 表单 | `.form-group` `.form-row` | 输入/文本域/选择 |
+| 下拉菜单 | `.filter-dropdown-trigger` `.filter-dropdown-menu` `.filter-dropdown-item` | 点击展开 |
+| 聊天界面 | `.chat-msg` `.chat-input-area` | 消息气泡 + 输入区 |
+| 顶栏 | `.topbar` `.topbar-logo` `.topbar-nav-btn` `.icon-btn` | 导航栏 |
+| 侧边栏 | `.sidebar` `.sidebar-title` `.game-btn` `.oc-filter-btn` | 导航/筛选 |
+| 主内容 | `.main-content` | 玻璃面板容器 |
+| 标签/徽章 | 自定义 + `--accent/--teal/--danger` 色值 | 胶囊样式 |
+| 搜索栏 | `.search-bar` `.search-input` `.search-btn` | |
+| 列表行 | `.row-item` | 通用列表项 |
+| 空状态 | `.empty-state` | |
+| Toast | `.toast` | 顶部提示 |
+
+> 三主题切换只需在 `<body>` 加 `light-mode` / `dark-mode` 类，全部组件自动适配。
 
 ## 核心样式规范
 

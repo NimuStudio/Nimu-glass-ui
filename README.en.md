@@ -50,14 +50,44 @@ Click the top-right button to switch themes; hover over cards to see edge glow. 
 
 ### Option 2: Add to your project
 
+**Way A: CDN (recommended, no download)**
+
 ```html
-<!-- 1. core styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/ysti-glass.css">
+<!-- optional: liquid glass background -->
+<script src="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/liquid-glass.js"></script>
+```
+
+**Way B: Download locally**
+
+Copy `assets/ysti-glass.css` into your project, then:
+
+```html
 <link rel="stylesheet" href="ysti-glass.css">
+```
 
-<!-- 2. (optional) liquid glass background -->
-<script src="liquid-glass.js"></script>
+**Minimal runnable example** (save as an .html file and open):
 
-<!-- 3. (optional) cursor glow + edge highlight (see comments in index.html) -->
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My page</title>
+<link rel="stylesheet" href="ysti-glass.css">
+</head>
+<body>
+  <div class="order-card" style="max-width:380px;margin:48px auto;padding:26px">
+    <h3>My glass card</h3>
+    <p style="color:var(--text-dim)">Just include ysti-glass.css and all components are ready.</p>
+    <div style="display:flex;gap:10px;margin-top:14px">
+      <button class="btn-accept">Primary</button>
+      <button class="btn-cancel">Cancel</button>
+    </div>
+  </div>
+  <!-- Try <body class="dark-mode"> for dark theme -->
+</body>
+</html>
 ```
 
 No initialization needed — styles work out of the box.
@@ -80,6 +110,29 @@ Persistent toggle (localStorage) — see the `themeToggle` example at the end of
 var theme = localStorage.getItem("ysti_theme") || "glass";
 // cycle glass → light → dark, write to body class + localStorage
 ```
+
+## Components
+
+| Component | Classes | Notes |
+|---|---|---|
+| Glass card | `.order-card` | generic glass card with hover glow |
+| Primary buttons | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | gold/teal gradients |
+| Secondary button | `.btn-cancel` | subtle button |
+| Login page | `.login-overlay` `.login-panel` `.login-field` `.login-btn` | complete login card |
+| Modal | `.modal-overlay` `.modal-panel` | 28px rounded glass dialog |
+| Form | `.form-group` `.form-row` | inputs / textareas / selects |
+| Dropdown | `.filter-dropdown-trigger` `.filter-dropdown-menu` `.filter-dropdown-item` | click to expand |
+| Chat UI | `.chat-msg` `.chat-input-area` | message bubbles + input bar |
+| Topbar | `.topbar` `.topbar-logo` `.topbar-nav-btn` `.icon-btn` | navigation bar |
+| Sidebar | `.sidebar` `.sidebar-title` `.game-btn` `.oc-filter-btn` | nav / filters |
+| Main content | `.main-content` | glass panel container |
+| Badges | custom + `--accent/--teal/--danger` tokens | pill style |
+| Search bar | `.search-bar` `.search-input` `.search-btn` | |
+| List row | `.row-item` | generic list item |
+| Empty state | `.empty-state` | |
+| Toast | `.toast` | top notification |
+
+> Switch themes by adding `light-mode` / `dark-mode` class to `<body>` — all components adapt automatically.
 
 ## Design Tokens
 
