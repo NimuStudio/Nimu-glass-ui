@@ -22,6 +22,16 @@ It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glas
 |---|---|---|
 | ![glass](screenshots/glass.png) | ![light](screenshots/light.png) | ![dark](screenshots/dark.png) |
 
+🎬 **Theme switching animation**: ![themes](screenshots/themes.gif)
+
+**Component close-ups** (modal / dropdown / chat UI):
+
+| | | |
+|---|---|---|
+| ![modal](screenshots/modal.png) | ![dropdown](screenshots/dropdown.png) | ![chat](screenshots/chat.png) |
+
+📱 **Mobile H5**: ![mobile](screenshots/mobile.png)
+
 ## Features
 
 - ✨ **3-theme system**: Glass (default) / Light / Dark, one-click switch, geometry stays constant — only colors change

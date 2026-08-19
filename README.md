@@ -22,6 +22,16 @@ YSTI Glass UI 是一套**完整的 Web UI 体系**：玻璃拟态（Glassmorphis
 |---|---|---|
 | ![glass](screenshots/glass.png) | ![light](screenshots/light.png) | ![dark](screenshots/dark.png) |
 
+🎬 **三主题切换动效**：![themes](screenshots/themes.gif)
+
+**组件特写**（弹窗 / 下拉菜单 / 聊天界面）：
+
+| | | |
+|---|---|---|
+| ![modal](screenshots/modal.png) | ![dropdown](screenshots/dropdown.png) | ![chat](screenshots/chat.png) |
+
+📱 **移动端 H5**：![mobile](screenshots/mobile.png)
+
 ## 特性
 
 - ✨ **三主题体系**：玻璃拟态（默认）/ 浅色 / 深色，一键切换，几何尺寸恒定、只换颜色

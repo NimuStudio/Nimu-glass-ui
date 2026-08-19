@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: JS syntax check
+        run: |
+          node --check assets/liquid-glass.js
+          node --check examples/widget.js
+
+      - name: Quality check (CSS balance / HTML pairing)
+        run: node scripts/check.js
+
+      - name: HTML inline script syntax
+        run: |
+          node -e "
+            const fs = require('fs');
+            for (const f of ['index.html', 'examples/console.html']) {
+              const html = fs.readFileSync(f, 'utf8');
+              const blocks = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+              blocks.forEach((b, i) => {
+                const tmp = '/tmp/' + f.replace(/\W/g, '_') + '_' + i + '.js';
+                fs.writeFileSync(tmp, b[1]);
+                require('child_process').execSync('node --check ' + tmp, { stdio: 'inherit' });
+              });
+              console.log('✅ inline scripts in ' + f + ': ' + blocks.length + ' blocks OK');
+            }
+          "
