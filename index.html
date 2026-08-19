@@ -18,7 +18,7 @@ body{padding:0}
 .demo-card{padding:18px 20px;min-width:180px;flex:1}
 .demo-card h4{margin-bottom:8px;font-size:14px;color:var(--text)}
 .demo-card p{font-size:12px;color:var(--text-dim);line-height:1.6}
-.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .demo-field{margin-bottom:12px;max-width:360px}
 .demo-field label{display:block;font-size:12px;color:var(--text-dim);margin-bottom:6px}
 .demo-field input{width:100%;padding:10px 14px;background:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.5);border-radius:var(--radius-sm);color:var(--text);font-size:14px;outline:none;font-family:inherit}
@@ -29,6 +29,20 @@ body{padding:0}
 .demo-badge.teal{background:rgba(107,149,137,.15);color:var(--teal)}
 .demo-badge.red{background:rgba(196,85,77,.12);color:var(--danger)}
 .demo-tip{font-size:12px;color:var(--text-dim);margin-top:6px}
+/* 弹窗演示 */
+#demoModal .modal-panel{max-width:420px}
+.demo-msg-list{display:flex;flex-direction:column;gap:8px;max-width:480px;background:rgba(255,255,255,.12);border-radius:var(--radius);padding:14px;border:1px solid rgba(255,255,255,.3)}
+.demo-chat-input{margin-top:10px;max-width:480px}
+.demo-chat-input .chat-input-area{padding:10px}
+.demo-chat-input textarea{flex:1;border:none;outline:none;resize:none;font-size:13px;padding:8px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.5);color:var(--text);font-family:inherit}
+.demo-chat-input .chat-send{padding:0 18px;border:none;border-radius:var(--radius-sm);background:linear-gradient(135deg,var(--teal),#4a7a6e);color:#fff;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
+/* 登录演示 */
+.demo-login-preview{max-width:360px;padding:28px}
+.demo-login-preview .login-panel{margin:0}
+/* 列表演示 */
+.demo-table{max-width:520px}
+.demo-table .row-item{padding:12px 16px}
+.demo-table .row-item b{font-weight:600}
 </style>
 </head>
 <body>
@@ -54,7 +68,12 @@ body{padding:0}
       <div class="sidebar-title">导航</div>
       <button class="game-btn active"><span class="game-label">🏠 首页</span></button>
       <button class="game-btn"><span class="game-label">📊 统计</span></button>
+      <button class="game-btn"><span class="game-label">💬 消息</span></button>
       <button class="game-btn"><span class="game-label">⚙️ 设置</span></button>
+      <div class="sidebar-title" style="margin-top:16px">筛选</div>
+      <div class="oc-filter-btn active">全部</div>
+      <div class="oc-filter-btn">进行中</div>
+      <div class="oc-filter-btn">已完成</div>
     </div>
     <div class="main-content demo-content">
       <div class="section">
@@ -82,6 +101,7 @@ body{padding:0}
           <button class="btn-checkout">结算</button>
           <button class="btn-cancel">取消</button>
           <button class="btn-recharge">充值</button>
+          <button class="btn-save" style="width:auto;padding:10px 28px">保存</button>
         </div>
       </div>
       <div class="section">
@@ -98,6 +118,68 @@ body{padding:0}
         <div class="btn-row"><button class="btn-save" style="width:auto;padding:10px 28px">保存</button></div>
         <div class="demo-tip">输入框聚焦时有金色光晕描边，按钮按下有缩放反馈。</div>
       </div>
+      <div class="section">
+        <h2>弹窗</h2>
+        <div class="btn-row">
+          <button class="btn-accept" onclick="document.getElementById('demoModal').style.display='flex'">打开弹窗</button>
+        </div>
+        <div class="demo-tip">玻璃拟态弹窗，28px 圆角，打开有弹性动画。</div>
+      </div>
+      <div class="section">
+        <h2>下拉菜单</h2>
+        <div style="position:relative;display:inline-block" class="filter-dropdown">
+          <button class="filter-dropdown-trigger" onclick="this.parentElement.classList.toggle('open')">筛选条件 <span class="filter-dropdown-arrow">▼</span></button>
+          <div class="filter-dropdown-menu">
+            <div class="filter-dropdown-item active">全部</div>
+            <div class="filter-dropdown-item">推荐</div>
+            <div class="filter-dropdown-item">最新</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>聊天界面</h2>
+        <div class="demo-msg-list">
+          <div class="chat-msg received"><div class="chat-msg-avatar">🙋</div><div class="chat-msg-body"><div class="chat-msg-bubble">你好！请问这个怎么用？</div><div class="chat-msg-time">10:32</div></div></div>
+          <div class="chat-msg sent"><div class="chat-msg-body"><div class="chat-msg-bubble">直接引入 ysti-glass.css 就能用了～</div><div class="chat-msg-time">10:33</div></div></div>
+          <div class="chat-msg received"><div class="chat-msg-avatar">🙋</div><div class="chat-msg-body"><div class="chat-msg-bubble">太漂亮了，马上去试试！</div><div class="chat-msg-time">10:33</div></div></div>
+        </div>
+        <div class="demo-chat-input">
+          <div class="chat-input-area"><textarea placeholder="输入消息..."></textarea><button class="chat-send">发送</button></div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>登录页</h2>
+        <div class="demo-login-preview">
+          <div class="login-panel" style="animation:none">
+            <div class="login-icon">✦</div>
+            <h2 style="font-size:22px;margin-bottom:14px">欢迎回来</h2>
+            <div class="login-field"><span class="field-icon">👤</span><input placeholder="用户名"></div>
+            <div class="login-field"><span class="field-icon">🔒</span><input type="password" placeholder="密码"></div>
+            <button class="login-btn">登 录</button>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>列表</h2>
+        <div class="demo-table">
+          <div class="row-item"><span>📄 项目一</span><span class="spacer" style="flex:1"></span><span class="demo-badge teal" style="font-size:11px">进行中</span></div>
+          <div class="row-item"><span>📄 项目二</span><span class="spacer" style="flex:1"></span><span class="demo-badge gold" style="font-size:11px">已完成</span></div>
+          <div class="row-item"><span>📄 项目三</span><span class="spacer" style="flex:1"></span><span class="demo-badge red" style="font-size:11px">已关闭</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗演示 -->
+<div class="modal-overlay" id="demoModal" style="display:none">
+  <div class="modal-panel">
+    <div class="modal-icon">✨</div>
+    <h3>这是一个玻璃弹窗</h3>
+    <p class="modal-detail" style="font-size:13px;color:var(--text-secondary)">半透明背景 + 40px 模糊 + 28px 圆角，带弹性入场动画。</p>
+    <div class="modal-btns" style="justify-content:center">
+      <button class="btn-cancel" onclick="document.getElementById('demoModal').style.display='none'">关闭</button>
+      <button class="btn-confirm" onclick="document.getElementById('demoModal').style.display='none'">确认</button>
     </div>
   </div>
 </div>
@@ -172,7 +254,7 @@ body{padding:0}
     });
   }
   function ig() {
-    var sc = ".sidebar,.main-content,.topbar,.order-card,.login-panel,.publish-form";
+    var sc = ".sidebar,.main-content,.topbar,.order-card,.login-panel,.filter-dropdown-trigger,.filter-dropdown-menu,.modal-panel";
     document.querySelectorAll(sc).forEach(function (el) { if (!el.classList.contains("glass-panel")) el.classList.add("glass-panel"); });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ig); else ig();
@@ -200,6 +282,18 @@ body{padding:0}
     });
   }
 })();
+
+// ============ 弹窗：点击遮罩关闭 ============
+document.getElementById("demoModal").addEventListener("click", function (e) {
+  if (e.target === this) this.style.display = "none";
+});
+
+// ============ 下拉菜单：点击外部关闭 ============
+document.addEventListener("click", function (e) {
+  document.querySelectorAll(".filter-dropdown").forEach(function (dd) {
+    if (!dd.contains(e.target)) dd.classList.remove("open");
+  });
+});
 </script>
 </body>
 </html>

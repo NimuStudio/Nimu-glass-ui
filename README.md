@@ -32,6 +32,10 @@ YSTI Glass UI 是一套**完整的 Web UI 体系**：玻璃拟态（Glassmorphis
 - 🚫 **零依赖**：不引入任何框架、UI 库、构建工具，纯原生三件套
 - 🧩 **组件齐全**：卡片、按钮、标签、表单、弹窗、导航、侧边栏、登录页、聊天界面
 
+## 在线演示
+
+**https://ystibdjmnm.github.io/ysti-glass-ui/**（GitHub Pages，配置方法见文末）
+
 ## 快速开始
 
 ### 方式一：直接看演示
@@ -42,7 +46,7 @@ python -m http.server 8080
 # 浏览器访问 http://localhost:8080
 ```
 
-点右上角按钮切换三主题；鼠标划过卡片看边缘高光。
+点右上角按钮切换三主题；鼠标划过卡片看边缘高光；演示页包含卡片、按钮、标签、表单、弹窗、下拉菜单、聊天界面、登录页、列表等全部组件。
 
 ### 方式二：引入到你的项目
 
@@ -116,9 +120,11 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 
 | 文件 | 内容 |
 |---|---|
-| `index.html` | 三主题演示页（卡片/按钮/标签/表单 + 全部特效） |
-| `examples/console.html` | 完整「客服工作台」示例：登录、会话列表、聊天、访客信息（含新手引导） |
+| `index.html` | 三主题演示页（卡片/按钮/标签/表单/弹窗/下拉/聊天/登录/列表 + 全部特效） |
+| `examples/console.html` | 完整「客服工作台」示例 ⚠️ **需要配套后端 API，不能纯静态打开**（作为完整应用参考） |
 | `examples/widget.js` | 可嵌入任意网站的「聊天窗」小组件（一行代码接入，三主题自适应） |
+
+> **GitHub Pages 开启方法**：仓库 Settings → Pages → Source 选 `Deploy from a branch` → Branch 选 `main` / `/ (root)` → Save，即可通过 `https://ystibdjmnm.github.io/ysti-glass-ui/` 访问在线演示。
 
 ## 目录结构
 

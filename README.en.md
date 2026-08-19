@@ -32,6 +32,10 @@ It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glas
 - 🚫 **Zero dependencies**: no frameworks, no UI libs, no build tools — plain HTML/CSS/JS
 - 🧩 **Complete components**: cards, buttons, badges, forms, modals, nav, sidebar, login page, chat UI
 
+## Live Demo
+
+**https://ystibdjmnm.github.io/ysti-glass-ui/** (GitHub Pages)
+
 ## Quick Start
 
 ### Option 1: Open the demo
@@ -42,7 +46,7 @@ python -m http.server 8080
 # visit http://localhost:8080
 ```
 
-Click the top-right button to switch themes; hover over cards to see edge glow.
+Click the top-right button to switch themes; hover over cards to see edge glow. The demo page covers cards, buttons, badges, forms, modal, dropdown, chat UI, login panel and lists.
 
 ### Option 2: Add to your project
 
@@ -116,9 +120,11 @@ Dark mode auto-overrides: bg `#1c1c1e`, text `#e8e6e3`, accent `#d4b87a`. Full s
 
 | File | Content |
 |---|---|
-| `index.html` | 3-theme demo page (cards / buttons / badges / forms + all effects) |
-| `examples/console.html` | Full "customer-service console": login, conversation list, chat, visitor info (with onboarding) |
+| `index.html` | 3-theme demo page (cards/buttons/badges/forms/modal/dropdown/chat/login/list + all effects) |
+| `examples/console.html` | Full "customer-service console" example ⚠️ **requires a backend API, not runnable as static file** |
 | `examples/widget.js` | Embeddable chat-widget (one line of code, theme-aware) |
+
+> **Enable GitHub Pages**: repo Settings → Pages → Source `Deploy from a branch` → Branch `main` / `/ (root)` → Save. Live at `https://ystibdjmnm.github.io/ysti-glass-ui/`.
 
 ## Structure
 
