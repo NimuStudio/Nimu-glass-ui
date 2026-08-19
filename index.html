@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSTI Glass UI — 三主题玻璃拟态演示</title>
+<link rel="stylesheet" href="assets/ysti-glass.css">
+<style>
+/* 演示页专属布局（演示用，非 UI 体系的一部分） */
+body{padding:0}
+.demo-wrap{display:flex;flex-direction:column;height:100vh}
+.demo-main{display:flex;flex:1;min-height:0;padding:12px;gap:12px}
+.demo-side{width:240px;padding:16px 12px;overflow-y:auto}
+.demo-content{flex:1;padding:24px;overflow-y:auto}
+.section{margin-bottom:28px}
+.section h2{font-size:16px;margin-bottom:14px;color:var(--text);font-weight:700}
+.card-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.demo-card{padding:18px 20px;min-width:180px;flex:1}
+.demo-card h4{margin-bottom:8px;font-size:14px;color:var(--text)}
+.demo-card p{font-size:12px;color:var(--text-dim);line-height:1.6}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.demo-field{margin-bottom:12px;max-width:360px}
+.demo-field label{display:block;font-size:12px;color:var(--text-dim);margin-bottom:6px}
+.demo-field input{width:100%;padding:10px 14px;background:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.5);border-radius:var(--radius-sm);color:var(--text);font-size:14px;outline:none;font-family:inherit}
+.demo-field input:focus{border-color:rgba(200,164,92,.5);box-shadow:0 0 0 3px var(--accent-glow)}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.demo-badge{padding:4px 12px;border-radius:var(--radius-pill);font-size:12px;font-weight:600}
+.demo-badge.gold{background:rgba(200,164,92,.2);color:var(--accent)}
+.demo-badge.teal{background:rgba(107,149,137,.15);color:var(--teal)}
+.demo-badge.red{background:rgba(196,85,77,.12);color:var(--danger)}
+.demo-tip{font-size:12px;color:var(--text-dim);margin-top:6px}
+</style>
+</head>
+<body>
+
+<canvas id="cursorGlow"></canvas>
+<div class="app-container demo-wrap" id="app">
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-logo">✦ YSTI Glass UI</div>
+      <div class="topbar-nav">
+        <button class="topbar-nav-btn active">组件</button>
+        <button class="topbar-nav-btn">卡片</button>
+        <button class="topbar-nav-btn">表单</button>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn" id="themeToggle" title="切换主题" style="font-size:13px;font-weight:600;padding:0 10px;width:auto">玻璃</button>
+      <div class="user-badge"><div class="user-avatar">✦</div><span class="user-name">Demo</span></div>
+    </div>
+  </div>
+  <div class="main-layout demo-main">
+    <div class="sidebar demo-side">
+      <div class="sidebar-title">导航</div>
+      <button class="game-btn active"><span class="game-label">🏠 首页</span></button>
+      <button class="game-btn"><span class="game-label">📊 统计</span></button>
+      <button class="game-btn"><span class="game-label">⚙️ 设置</span></button>
+    </div>
+    <div class="main-content demo-content">
+      <div class="section">
+        <h2>玻璃卡片</h2>
+        <div class="card-row">
+          <div class="order-card demo-card">
+            <h4>玻璃拟态卡片</h4>
+            <p>半透明 + 背景模糊 + 亮边框 + 悬浮泛光，鼠标移上来看看边缘高光。</p>
+          </div>
+          <div class="order-card demo-card">
+            <h4>三主题支持</h4>
+            <p>点右上角按钮切换 玻璃 / 浅色 / 深色，几何尺寸不变，只换颜色。</p>
+          </div>
+          <div class="order-card demo-card">
+            <h4>无构建依赖</h4>
+            <p>纯 HTML/CSS/JS，复制即用，不引入任何框架或打包工具。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>按钮</h2>
+        <div class="btn-row">
+          <button class="btn-accept">主操作</button>
+          <button class="btn-confirm">确认</button>
+          <button class="btn-checkout">结算</button>
+          <button class="btn-cancel">取消</button>
+          <button class="btn-recharge">充值</button>
+        </div>
+      </div>
+      <div class="section">
+        <h2>标签</h2>
+        <div class="badge-row">
+          <span class="demo-badge gold">金色标签</span>
+          <span class="demo-badge teal">青色标签</span>
+          <span class="demo-badge red">危险标签</span>
+        </div>
+      </div>
+      <div class="section">
+        <h2>表单</h2>
+        <div class="demo-field"><label>示例输入框</label><input placeholder="聚焦看看高光效果..."></div>
+        <div class="btn-row"><button class="btn-save" style="width:auto;padding:10px 28px">保存</button></div>
+        <div class="demo-tip">输入框聚焦时有金色光晕描边，按钮按下有缩放反馈。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/liquid-glass.js"></script>
+<script>
+// ============ 光标泛光（可选特效） ============
+(function () {
+  var canvas = document.getElementById("cursorGlow");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var mx = -200, my = -200, tmx = -200, tmy = -200;
+  var dpr = window.devicePixelRatio || 1;
+  function resize() {
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+    ctx.scale(dpr, dpr);
+  }
+  resize();
+  window.addEventListener("resize", resize);
+  function drawGlow() {
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    tmx += (mx - tmx) * 0.25;
+    tmy += (my - tmy) * 0.25;
+    var g = ctx.createRadialGradient(tmx, tmy, 0, tmx, tmy, 180);
+    g.addColorStop(0, "rgba(255,255,255,0.15)");
+    g.addColorStop(0.35, "rgba(255,255,255,0.04)");
+    g.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = g;
+    ctx.fillRect(tmx - 180, tmy - 180, 360, 360);
+    requestAnimationFrame(drawGlow);
+  }
+  drawGlow();
+  document.addEventListener("mousemove", function (e) { mx = e.clientX; my = e.clientY; }, { passive: true });
+})();
+
+// ============ 玻璃边缘高光（可选特效） ============
+(function () {
+  function applyEdgeGlow(p, rx, ry) {
+    var isDark = document.body.classList.contains("dark-mode");
+    var c = isDark ? "200,164,92" : "255,255,255";
+    var op1 = isDark ? 0.7 : 0.85;
+    var op2 = isDark ? 0.25 : 0.18;
+    var et = 0, eb = 0, el = 0, er = 0;
+    var dt = Math.abs(ry); if (dt <= 50) et = 1 - dt / 50;
+    var db = Math.abs(ry - 100); if (db <= 50) eb = 1 - db / 50;
+    var dl = Math.abs(rx); if (dl <= 50) el = 1 - dl / 50;
+    var dr = Math.abs(rx - 100); if (dr <= 50) er = 1 - dr / 50;
+    var shadows = [];
+    if (et > 0.02) shadows.push("inset 0 2px 1px rgba(" + c + "," + (op1 * et).toFixed(3) + "),inset 0 8px 22px -8px rgba(" + c + "," + (op2 * et).toFixed(3) + ")");
+    if (eb > 0.02) shadows.push("inset 0 -2px 1px rgba(" + c + "," + (op1 * eb).toFixed(3) + "),inset 0 -8px 22px -8px rgba(" + c + "," + (op2 * eb).toFixed(3) + ")");
+    if (el > 0.02) shadows.push("inset 2px 0 1px rgba(" + c + "," + (op1 * el).toFixed(3) + "),inset 8px 0 22px -8px rgba(" + c + "," + (op2 * el).toFixed(3) + ")");
+    if (er > 0.02) shadows.push("inset -2px 0 1px rgba(" + c + "," + (op1 * er).toFixed(3) + "),inset -8px 0 22px -8px rgba(" + c + "," + (op2 * er).toFixed(3) + ")");
+    p.style.boxShadow = shadows.join(",") || "";
+  }
+  var raf = null, lx = -999, ly = -999;
+  document.addEventListener("mousemove", function (e) {
+    lx = e.clientX; ly = e.clientY;
+    if (!raf) raf = requestAnimationFrame(update);
+  }, { passive: true });
+  function update() {
+    raf = null;
+    document.querySelectorAll(".glass-panel").forEach(function (p) {
+      var r = p.getBoundingClientRect();
+      if (r.width <= 0) { p.style.boxShadow = ""; return; }
+      var rx = ((lx - r.left) / r.width) * 100;
+      var ry = ((ly - r.top) / r.height) * 100;
+      if (rx < -60 || rx > 160 || ry < -60 || ry > 160) { p.style.boxShadow = ""; return; }
+      applyEdgeGlow(p, rx, ry);
+    });
+  }
+  function ig() {
+    var sc = ".sidebar,.main-content,.topbar,.order-card,.login-panel,.publish-form";
+    document.querySelectorAll(sc).forEach(function (el) { if (!el.classList.contains("glass-panel")) el.classList.add("glass-panel"); });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ig); else ig();
+  window._glassInit = ig;
+})();
+
+// ============ 三主题切换 ============
+(function () {
+  var themeBtn = document.getElementById("themeToggle");
+  var theme = localStorage.getItem("ysti_theme") || "glass";
+  function applyTheme() {
+    document.body.classList.remove("light-mode", "dark-mode");
+    if (theme === "glass") { if (themeBtn) themeBtn.textContent = "玻璃"; if (window._glassInit) window._glassInit(); }
+    else if (theme === "light") { document.body.classList.add("light-mode"); if (themeBtn) themeBtn.textContent = "浅色"; }
+    else { document.body.classList.add("dark-mode"); if (themeBtn) themeBtn.textContent = "深色"; }
+    localStorage.setItem("ysti_theme", theme);
+  }
+  applyTheme();
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      if (theme === "glass") theme = "light";
+      else if (theme === "light") theme = "dark";
+      else theme = "glass";
+      applyTheme();
+    });
+  }
+})();
+</script>
+</body>
+</html>
