@@ -223,6 +223,10 @@ ysti-glass-ui/
 
 [MIT](LICENSE) — 自由使用、修改、商用，保留版权声明即可。
 
+## 贡献
+
+欢迎提交 Issue（[🐛 Bug](https://github.com/ystibdjmnm/ysti-glass-ui/issues/new?template=bug_report.md) / [✨ 功能建议](https://github.com/ystibdjmnm/ysti-glass-ui/issues/new?template=feature_request.md)）和 Pull Request，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ---
 
 <div align="center">

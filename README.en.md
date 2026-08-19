@@ -223,6 +223,10 @@ ysti-glass-ui/
 
 [MIT](LICENSE) — free to use, modify, and use commercially with attribution.
 
+## Contributing
+
+Open an [Issue](https://github.com/ystibdjmnm/ysti-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ---
 
 <div align="center">
