@@ -16,6 +16,12 @@ YSTI Glass UI 是一套从真实产品（YSTI 二游代肝平台）中提炼出�
 
 它不是一个框架，而是一份**开箱即用的设计资产**：把 `ysti-glass.css` 引入你的页面，就能获得一整套打磨过的组件视觉——卡片、按钮、表单、弹窗、导航、侧边栏、登录页、消息气泡，全部自带三主题适配。
 
+## 截图
+
+| 玻璃拟态（默认） | 浅色 | 深色 |
+|---|---|---|
+| ![glass](screenshots/glass.png) | ![light](screenshots/light.png) | ![dark](screenshots/dark.png) |
+
 ## 特性
 
 - ✨ **三主题体系**：玻璃拟态（默认）/ 浅色 / 深色，一键切换，几何尺寸恒定、只换颜色
@@ -117,16 +123,18 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 ## 目录结构
 
 ```
-ysti-ui/
+ysti-glass-ui/
 ├── assets/
 │   ├── ysti-glass.css     # 核心样式（三主题体系，114KB）
 │   └── liquid-glass.js    # WebGL2 液态玻璃背景特效
 ├── examples/
 │   ├── console.html       # 客服工作台完整示例
 │   └── widget.js          # 嵌入聊天窗小组件
+├── screenshots/           # 三主题截图
 ├── index.html             # 三主题演示页
 ├── UI.md                  # 设计规范（圆角/颜色/玻璃样式/检查清单）
-├── README.md
+├── README.md              # 中文文档
+├── README.en.md           # English docs
 └── LICENSE
 ```
 
