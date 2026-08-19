@@ -1,8 +1,8 @@
-# UI 规范 — Kefu 客服 SaaS（YSTI 圆角玻璃体系）
+# UI 规范 — Kefu 客服 SaaS（Nimu 圆角玻璃体系）
 
-> 本文件定义本项目的 UI 统一约定。**所有新增/修改的 UI 必须遵守**，与 YSTI 视觉保持同一体系。
+> 本文件定义本项目的 UI 统一约定。**所有新增/修改的 UI 必须遵守**，与 Nimu 视觉保持同一体系。
 
-## 1. 主题体系（三主题，YSTI 同款）
+## 1. 主题体系（三主题，Nimu 同款）
 
 | 主题 | body class | 视觉特征 |
 |---|---|---|
@@ -42,7 +42,7 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 - **顶部高光线**（大容器）：`::before{content:"";position:absolute;top:0;left:14px;right:14px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent)}`
 - 按钮渐变：主操作 `linear-gradient(135deg,var(--accent2),var(--accent))`；客服类 `linear-gradient(135deg,var(--teal),#4a7a6e)`
 
-## 4. 颜色变量（:root，YSTI 同款）
+## 4. 颜色变量（:root，Nimu 同款）
 
 ```css
 --accent:#c8a45c; --accent2:#e8d5a3; --accent-glow:rgba(200,164,92,.3);

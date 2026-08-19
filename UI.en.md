@@ -1,6 +1,6 @@
-# UI Spec — YSTI Glass UI (Glassmorphism system)
+# UI Spec — Nimu Glass UI (Glassmorphism system)
 
-> This document defines the UI conventions for this project. **All new/changed UI must follow it** and stay consistent with the YSTI visual system.
+> This document defines the UI conventions for this project. **All new/changed UI must follow it** and stay consistent with the Nimu visual system.
 
 ## 1. Theme System (3 themes)
 
