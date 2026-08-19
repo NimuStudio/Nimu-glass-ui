@@ -219,6 +219,16 @@ ysti-glass-ui/
 - `backdrop-filter` needs a recent browser; falls back to plain translucent color otherwise
 - Full mobile (H5) support with `env(safe-area-inset-*)`
 
+## Sponsors
+
+Thanks to the following supporters for keeping this project going ❤️
+
+| Supporter | Tier | Date |
+|---|---|---|
+| Waiting for you ⭐ | Supporter ¥18 | — |
+
+> Want to support? Find **YSTI Glass UI** on [Afdian](https://afdian.com) (or via the GitHub profile sponsor link). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
+
 ## License
 
 [MIT](LICENSE) — free to use, modify, and use commercially with attribution.
