@@ -44,7 +44,7 @@ YSTI Glass UI 是一套**完整的 Web UI 体系**：玻璃拟态（Glassmorphis
 
 ## 在线演示
 
-👉 [https://ystibdjmnm.github.io/ysti-glass-ui/](https://ystibdjmnm.github.io/ysti-glass-ui/)（GitHub Pages，配置方法见文末）
+👉 [https://ystibdjmnm.github.io/Nimu-glass-ui/](https://ystibdjmnm.github.io/Nimu-glass-ui/)（GitHub Pages，配置方法见文末）
 
 ## 快速开始
 
@@ -63,9 +63,9 @@ python -m http.server 8080
 **方法 A：CDN 一行引入（推荐，无需下载）**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/ysti-glass.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ystibdjmnm/Nimu-glass-ui@main/assets/ysti-glass.css">
 <!-- 可选：液态玻璃背景特效 -->
-<script src="https://cdn.jsdelivr.net/gh/ystibdjmnm/ysti-glass-ui@main/assets/liquid-glass.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ystibdjmnm/Nimu-glass-ui@main/assets/liquid-glass.js"></script>
 ```
 
 **方法 B：下载到本地**
@@ -187,7 +187,7 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 | `examples/console.html` | 完整「客服工作台」示例 ⚠️ **需要配套后端 API，不能纯静态打开**（作为完整应用参考） |
 | `examples/widget.js` | 可嵌入任意网站的「聊天窗」小组件（一行代码接入，三主题自适应） |
 
-> **GitHub Pages 开启方法**：仓库 Settings → Pages → Source 选 `Deploy from a branch` → Branch 选 `main` / `/ (root)` → Save，即可通过 `https://ystibdjmnm.github.io/ysti-glass-ui/` 访问在线演示。
+> **GitHub Pages 开启方法**：仓库 Settings → Pages → Source 选 `Deploy from a branch` → Branch 选 `main` / `/ (root)` → Save，即可通过 `https://ystibdjmnm.github.io/Nimu-glass-ui/` 访问在线演示。
 
 ## 目录结构
 
@@ -233,7 +233,7 @@ ysti-glass-ui/
 
 ## 贡献
 
-欢迎提交 Issue（[🐛 Bug](https://github.com/ystibdjmnm/ysti-glass-ui/issues/new?template=bug_report.md) / [✨ 功能建议](https://github.com/ystibdjmnm/ysti-glass-ui/issues/new?template=feature_request.md)）和 Pull Request，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎提交 Issue（[🐛 Bug](https://github.com/ystibdjmnm/Nimu-glass-ui/issues/new?template=bug_report.md) / [✨ 功能建议](https://github.com/ystibdjmnm/Nimu-glass-ui/issues/new?template=feature_request.md)）和 Pull Request，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
