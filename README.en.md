@@ -227,7 +227,7 @@ Thanks to the following supporters for keeping this project going ❤️
 |---|---|---|
 | Waiting for you ⭐ | Supporter ¥18 | — |
 
-> Want to support? Find **YSTI Glass UI** on [Afdian](https://afdian.com) (or via the GitHub profile sponsor link). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
+> Want to support? ☕ [Buy me a coffee on Afdian](https://www.ifdian.net/a/ystibdjmnm) (or via the GitHub profile sponsor link). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
 
 ## License
 
