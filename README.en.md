@@ -12,7 +12,7 @@ Pure HTML / CSS / JS · Zero build dependencies · Copy & use
 
 ## What is it
 
-YSTI Glass UI is a complete frontend UI system distilled from a real product (the YSTI game-services platform): **glassmorphism + light + dark** themes with one-click switching, plus liquid glass background, cursor glow, and glass edge-highlight effects.
+YSTI Glass UI is a complete web UI system: **glassmorphism + light + dark** themes with one-click switching, plus liquid glass background, cursor glow, and glass edge-highlight effects.
 
 It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glass.css` into your page and you get a polished set of components — cards, buttons, forms, modals, navigation, sidebar, login page, chat bubbles — all with built-in 3-theme adaptation.
 
