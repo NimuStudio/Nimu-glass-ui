@@ -233,6 +233,10 @@ Thanks to the following supporters for keeping this project going ❤️
 
 [MIT](LICENSE) — free to use, modify, and use commercially with attribution.
 
+## Related
+
+- ⚡ Need real-time messaging? Pair with [**NimuChat**](https://github.com/NimuStudio/NimuChat) (lightweight WebSocket IM component) — Nimu Glass UI handles looks, NimuChat handles messaging.
+
 ## Contributing
 
 Open an [Issue](https://github.com/NimuStudio/Nimu-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).
