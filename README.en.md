@@ -4,6 +4,12 @@
 
 **A refined 3-theme glassmorphism UI system for the Web**
 
+[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=c8a45c)](https://github.com/NimuStudio/Nimu-glass-ui)
+[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6b9589)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-4a7a6e?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
+[![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
+[![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f7f5f0?style=flat-square&labelColor=2c2416&color=e8d5a3)](https://github.com/NimuStudio/Nimu-glass-ui)
+
 Pure HTML / CSS / JS · Zero build dependencies · Copy & use
 
 </div>
