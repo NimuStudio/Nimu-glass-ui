@@ -44,7 +44,7 @@ It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glas
 
 ## Live Demo
 
-👉 [https://ystibdjmnm.github.io/Nimu-glass-ui/](https://ystibdjmnm.github.io/Nimu-glass-ui/) (GitHub Pages)
+👉 [https://NimuStudio.github.io/Nimu-glass-ui/](https://NimuStudio.github.io/Nimu-glass-ui/) (GitHub Pages)
 
 ## Quick Start
 
@@ -63,9 +63,9 @@ Click the top-right button to switch themes; hover over cards to see edge glow. 
 **Way A: CDN (recommended, no download)**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ystibdjmnm/Nimu-glass-ui@main/assets/ysti-glass.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css">
 <!-- optional: liquid glass background -->
-<script src="https://cdn.jsdelivr.net/gh/ystibdjmnm/Nimu-glass-ui@main/assets/liquid-glass.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/liquid-glass.js"></script>
 ```
 
 **Way B: Download locally**
@@ -187,7 +187,7 @@ Dark mode auto-overrides: bg `#1c1c1e`, text `#e8e6e3`, accent `#d4b87a`. Full s
 | `examples/console.html` | Full "customer-service console" example ⚠️ **requires a backend API, not runnable as static file** |
 | `examples/widget.js` | Embeddable chat-widget (one line of code, theme-aware) |
 
-> **Enable GitHub Pages**: repo Settings → Pages → Source `Deploy from a branch` → Branch `main` / `/ (root)` → Save. Live at `https://ystibdjmnm.github.io/Nimu-glass-ui/`.
+> **Enable GitHub Pages**: repo Settings → Pages → Source `Deploy from a branch` → Branch `main` / `/ (root)` → Save. Live at `https://NimuStudio.github.io/Nimu-glass-ui/`.
 
 ## Structure
 
@@ -227,7 +227,7 @@ Thanks to the following supporters for keeping this project going ❤️
 |---|---|---|
 | Waiting for you ⭐ | Supporter ¥18 | — |
 
-> Want to support? ☕ [Buy me a coffee on Afdian](https://www.ifdian.net/a/ystibdjmnm) (or via the GitHub profile sponsor link). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
+> Want to support? ☕ [Buy me a coffee on Afdian](https://www.ifdian.net/a/NimuStudio) (or via the GitHub profile sponsor link). Supporters of the **¥18 tier** get their name (GitHub username or nickname) listed here permanently.
 
 ## License
 
@@ -235,7 +235,7 @@ Thanks to the following supporters for keeping this project going ❤️
 
 ## Contributing
 
-Open an [Issue](https://github.com/ystibdjmnm/Nimu-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Open an [Issue](https://github.com/NimuStudio/Nimu-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
