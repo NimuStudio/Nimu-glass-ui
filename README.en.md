@@ -243,6 +243,10 @@ Thanks to the following supporters for keeping this project going ❤️
 
 - ⚡ Need real-time messaging? Pair with [**NimuChat**](https://github.com/NimuStudio/NimuChat) (lightweight WebSocket IM component) — Nimu Glass UI handles looks, NimuChat handles messaging.
 
+## Discussions
+
+💬 Questions, feedback or want to share your work? Join [GitHub Discussions](https://github.com/NimuStudio/Nimu-glass-ui/discussions).
+
 ## Contributing
 
 Open an [Issue](https://github.com/NimuStudio/Nimu-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).

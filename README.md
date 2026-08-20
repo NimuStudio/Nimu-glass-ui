@@ -241,6 +241,10 @@ ysti-glass-ui/
 
 - ⚡ 需要实时通讯能力？搭配 [**NimuChat**](https://github.com/NimuStudio/NimuChat)（轻量 WebSocket 即时通讯组件）——Nimu Glass UI 管颜值，NimuChat 管通讯。
 
+## 讨论
+
+💬 有问题、想反馈或分享你的作品？欢迎来 [GitHub Discussions](https://github.com/NimuStudio/Nimu-glass-ui/discussions) 聊聊。
+
 ## 贡献
 
 欢迎提交 Issue（[🐛 Bug](https://github.com/NimuStudio/Nimu-glass-ui/issues/new?template=bug_report.md) / [✨ 功能建议](https://github.com/NimuStudio/Nimu-glass-ui/issues/new?template=feature_request.md)）和 Pull Request，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
