@@ -247,6 +247,8 @@ ysti-glass-ui/
 
 💬 有问题、想反馈或分享你的作品？欢迎来 [GitHub Discussions](https://github.com/NimuStudio/Nimu-glass-ui/discussions) 聊聊。
 
+加入 **Nimu Studio 用户交流群**：QQ 群 `1097466590`（或加作者 QQ `2998827169`），一起交流、反馈、催更。
+
 ## 贡献
 
 欢迎提交 Issue（[🐛 Bug](https://github.com/NimuStudio/Nimu-glass-ui/issues/new?template=bug_report.md) / [✨ 功能建议](https://github.com/NimuStudio/Nimu-glass-ui/issues/new?template=feature_request.md)）和 Pull Request，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。

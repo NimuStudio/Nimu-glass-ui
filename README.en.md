@@ -249,6 +249,8 @@ Thanks to the following supporters for keeping this project going ❤️
 
 💬 Questions, feedback or want to share your work? Join [GitHub Discussions](https://github.com/NimuStudio/Nimu-glass-ui/discussions).
 
+Join the **Nimu Studio user group**: QQ group `1097466590` (or add the author on QQ `2998827169`) to chat, give feedback and follow updates.
+
 ## Contributing
 
 Open an [Issue](https://github.com/NimuStudio/Nimu-glass-ui/issues) (bug report / feature request templates available) or a Pull Request — see [CONTRIBUTING.md](CONTRIBUTING.md).
