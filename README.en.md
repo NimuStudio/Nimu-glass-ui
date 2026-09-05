@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/yuri-avatar.png" width="96" height="96" alt="Nimu Studio" style="border-radius:50%" />
+
 # ✦ Nimu Glass UI
 
 **A refined 3-theme glassmorphism UI system for the Web**

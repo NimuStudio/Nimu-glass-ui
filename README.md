@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/yuri-avatar.png" width="96" height="96" alt="柠木工作室 · Nimu Studio" style="border-radius:50%" />
+
 # ✦ Nimu Glass UI
 
 **一套精致的「三主题玻璃拟态」Web UI 体系**
