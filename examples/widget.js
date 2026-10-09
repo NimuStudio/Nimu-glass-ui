@@ -21,25 +21,25 @@
 
   // ---- 样式（玻璃拟态，注入 <style>）----
   var css = [
-    "#kefu-launcher{position:fixed;right:24px;bottom:24px;z-index:99999;width:58px;height:58px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;border:none;box-shadow:0 8px 28px rgba(0,0,0,.25);background:linear-gradient(135deg,#6aa055,#4a7a35);transition:transform .25s}",
+    "#kefu-launcher{position:fixed;right:24px;bottom:24px;z-index:99999;width:58px;height:58px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;border:none;box-shadow:0 8px 28px rgba(0,0,0,.25);background:linear-gradient(135deg,#558f42,#467335);transition:transform .25s}",
     "#kefu-launcher:hover{transform:scale(1.08)}",
     "#kefu-panel{position:fixed;right:24px;bottom:96px;z-index:99999;width:360px;max-width:calc(100vw - 32px);height:520px;max-height:calc(100vh - 130px);border-radius:20px;display:none;flex-direction:column;overflow:hidden;background:rgba(255,255,255,.72);backdrop-filter:blur(30px) saturate(1.6);-webkit-backdrop-filter:blur(30px) saturate(1.6);border:1px solid rgba(255,255,255,.6);box-shadow:0 20px 60px rgba(0,0,0,.18);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}",
     "#kefu-panel.open{display:flex}",
-    "#kefu-hd{padding:14px 16px;background:linear-gradient(135deg,#6aa055,#4a7a35);color:#fff;display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}",
-    "#kefu-hd .kefu-dot{width:8px;height:8px;border-radius:50%;background:#7ef0b0;box-shadow:0 0 8px #7ef0b0;animation:kefuPulse 1.6s infinite}",
+    "#kefu-hd{padding:14px 16px;background:linear-gradient(135deg,#558f42,#467335);color:#fff;display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}",
+    "#kefu-hd .kefu-dot{width:8px;height:8px;border-radius:50%;background:#8cc274;box-shadow:0 0 8px #8cc274;animation:kefuPulse 1.6s infinite}",
     "#kefu-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,.35)}",
     ".kefu-msg{max-width:78%;padding:9px 13px;border-radius:14px;font-size:14px;line-height:1.5;word-break:break-word}",
     ".kefu-msg.v{background:#fff;border:1px solid rgba(0,0,0,.06);align-self:flex-start;border-bottom-left-radius:4px;color:#333}",
-    ".kefu-msg.a{background:linear-gradient(135deg,#6aa055,#4a7a35);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}",
+    ".kefu-msg.a{background:linear-gradient(135deg,#558f42,#467335);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}",
     ".kefu-msg.s{font-size:12px;color:#999;text-align:center;align-self:center;max-width:90%;background:transparent}",
     "#kefu-input{display:flex;gap:8px;padding:10px;border-top:1px solid rgba(0,0,0,.06);background:rgba(255,255,255,.6)}",
     "#kefu-input textarea{flex:1;border:none;outline:none;resize:none;font-size:14px;padding:9px 12px;border-radius:12px;background:rgba(255,255,255,.85);color:#333;max-height:90px;font-family:inherit}",
-    "#kefu-send{background:linear-gradient(135deg,#6aa055,#4a7a35);color:#fff;border:none;border-radius:12px;padding:0 16px;font-weight:700;cursor:pointer;font-size:14px}",
+    "#kefu-send{background:linear-gradient(135deg,#558f42,#467335);color:#fff;border:none;border-radius:12px;padding:0 16px;font-weight:700;cursor:pointer;font-size:14px}",
     "#kefu-send:active{transform:scale(.95)}",
     ".kefu-close{background:rgba(255,255,255,.2);border:none;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1;margin-left:auto}",
     "@keyframes kefuPulse{0%,100%{opacity:1}50%{opacity:.4}}",
     "@media (max-width:480px){#kefu-panel{right:12px;bottom:80px;width:calc(100vw - 24px)}#kefu-launcher{right:16px;bottom:16px}}",
-    "@media (prefers-color-scheme:dark){#kefu-panel{background:rgba(30,30,34,.88);border-color:rgba(255,255,255,.12);box-shadow:0 20px 60px rgba(0,0,0,.5)}#kefu-hd{background:linear-gradient(135deg,#4a7a35,#32542a)}#kefu-msgs{background:rgba(0,0,0,.2)}.kefu-msg.v{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.1);color:#e8e6e3}.kefu-msg.s{color:rgba(232,230,227,.45)}#kefu-input{background:rgba(30,30,34,.75);border-top-color:rgba(255,255,255,.08)}#kefu-input textarea{background:rgba(255,255,255,.08);color:#e8e6e3}"
+    "@media (prefers-color-scheme:dark){#kefu-panel{background:rgba(25,29,28,.88);border-color:rgba(255,255,255,.12);box-shadow:0 20px 60px rgba(0,0,0,.5)}#kefu-hd{background:linear-gradient(135deg,#467335,#3a5c2b)}#kefu-msgs{background:rgba(0,0,0,.2)}.kefu-msg.v{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.1);color:#f4f1ea}.kefu-msg.s{color:rgba(244,241,234,.45)}#kefu-input{background:rgba(25,29,28,.75);border-top-color:rgba(255,255,255,.08)}#kefu-input textarea{background:rgba(255,255,255,.08);color:#f4f1ea}"
   ].join("");
 
   var style = document.createElement("style");

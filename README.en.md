@@ -179,13 +179,13 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 
 ```css
 --accent: #b48ccd;   /* pastel primary */
---teal:   #6aa055;   /* pastel green */
+--teal:   #558f42;   /* pastel green */
 --danger: #c4554d;   /* danger */
---text:   #2a2430;   /* main text */
---bg:     #f6f4f7;   /* background */
+--text:   #241f18;   /* main text */
+--bg:     #f4f2f6;   /* background */
 ```
 
-Dark mode auto-overrides: bg `#1c1c1e`, text `#e8e6e3`, accent `#c8b2e0`. Full spec in [`UI.md`](UI.md).
+Dark mode auto-overrides: bg `#14161a`, text `#f4f1ea`, accent `#c8b2e0`. Full spec in [`UI.md`](UI.md).
 
 ## Examples
 

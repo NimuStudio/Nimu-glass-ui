@@ -7,8 +7,8 @@
 | 主题 | body class | 视觉特征 |
 |---|---|---|
 | 玻璃（默认） | 无 | 半透明 + `backdrop-filter: blur()` + 亮边框 + liquid-glass 泛光背景 |
-| 浅色 | `body.light-mode` | 纯白背景 `#f6f4f7`，元素纯白，**隐藏 canvas**（`body.light-mode canvas{display:none}`），去 blur |
-| 深色 | `body.dark-mode` | 背景 `#1c1c1e`，文字 `#e8e6e3`，accent 变 `#c8b2e0` |
+| 浅色 | `body.light-mode` | 纯白背景 `#f4f2f6`，元素纯白，**隐藏 canvas**（`body.light-mode canvas{display:none}`），去 blur |
+| 深色 | `body.dark-mode` | 背景 `#14161a`，文字 `#f4f1ea`，accent 变 `#c8b2e0` |
 
 - 切换按钮：`themeToggle`（显示"玻璃/浅色/深色"），localStorage 键 `ysti_theme`
 - **三主题只换颜色，几何尺寸（圆角/间距/高度）必须一致**
@@ -37,18 +37,18 @@ border-radius: var(--radius);                /* 20px */
 box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 ```
 
-- **hover 泛光**：`box-shadow: inset 0 0 0 1px rgba(255,255,255,.6), 0 8px 28px rgba(0,0,0,.06)`（深色主题用浅粉彩 `rgba(200,178,224,.25)`）
+- **hover 泛光**：`box-shadow: inset 0 0 0 1px rgba(255,255,255,.6), 0 8px 28px rgba(0,0,0,.06)`（深色主题用浅粉彩 `rgba(198,162,222,.25)`）
 - **active/选中**：粉彩描边 `border-color: rgba(180,140,205,.6)` + `box-shadow: inset 0 0 0 1px rgba(180,140,205,.35), 0 4px 16px rgba(180,140,205,.15)`
 - **顶部高光线**（大容器）：`::before{content:"";position:absolute;top:0;left:14px;right:14px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent)}`
-- 按钮渐变：主操作 `linear-gradient(135deg,var(--accent2),var(--accent))`；客服类 `linear-gradient(135deg,var(--teal),#4a7a35)`
+- 按钮渐变：主操作 `linear-gradient(135deg,var(--accent2),var(--accent))`；客服类 `linear-gradient(135deg,var(--teal),#467335)`
 
 ## 4. 颜色变量（:root，Nimu 同款）
 
 ```css
 --accent:#b48ccd; --accent2:#f9c0d0; --accent-glow:rgba(180,140,205,.32);
---teal:#6aa055; --danger:#c4554d;
---text:#2a2430; --text-secondary:rgba(44,36,22,.55); --text-dim:rgba(44,36,22,.35);
---bg:#f6f4f7;
+--teal:#558f42; --danger:#c4554d;
+--text:#241f18; --text-secondary:rgba(44,36,22,.55); --text-dim:rgba(44,36,22,.35);
+--bg:#f4f2f6;
 --radius:20px; --radius-sm:14px; --radius-xs:10px; --radius-pill:100px;
 --spring:cubic-bezier(0.34,1.56,0.64,1); --ease-out:cubic-bezier(0.16,1,0.3,1);
 ```
@@ -58,7 +58,7 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 - 按钮按压：`:active{transform:scale(.95~.97)}`
 - 卡片悬浮：hover 有泛光/高光，位移 `translateX/Y(2px)`
 - 切换动画：`transition:all .25s var(--spring)` 或 `.3s ease`
-- 深色主题按钮/输入框：`background:rgba(255,255,255,.08~.1)` + `border:1px solid rgba(255,255,255,.12~.14)` + `color:#e8e6e3`
+- 深色主题按钮/输入框：`background:rgba(255,255,255,.08~.1)` + `border:1px solid rgba(255,255,255,.12~.14)` + `color:#f4f1ea`
 - 浅色主题：`background:#fff` / `rgba(0,0,0,.03~.06)` + `border:1px solid rgba(0,0,0,.06~.08)` + 去 blur
 
 ## 6. 检查清单（新 UI 上线前）
