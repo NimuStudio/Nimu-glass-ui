@@ -6,11 +6,11 @@
 
 **A refined 3-theme glassmorphism UI system for the Web**
 
-[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=c8a45c)](https://github.com/NimuStudio/Nimu-glass-ui)
-[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6b9589)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-4a7a6e?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
+[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=b48ccd)](https://github.com/NimuStudio/Nimu-glass-ui)
+[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6aa055)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-b48ccd?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
 [![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
-[![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f7f5f0?style=flat-square&labelColor=2c2416&color=e8d5a3)](https://github.com/NimuStudio/Nimu-glass-ui)
+[![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f6f4f7?style=flat-square&labelColor=2a2430&color=f9c0d0)](https://github.com/NimuStudio/Nimu-glass-ui)
 
 Pure HTML / CSS / JS · Zero build dependencies · Copy & use
 
@@ -134,7 +134,7 @@ var theme = localStorage.getItem("ysti_theme") || "glass";
 | Component | Classes | Notes |
 |---|---|---|
 | Glass card | `.order-card` | generic glass card with hover glow |
-| Primary buttons | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | gold/teal gradients |
+| Primary buttons | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | pastel lilac/green gradients |
 | Secondary button | `.btn-cancel` | subtle button |
 | Login page | `.login-overlay` `.login-panel` `.login-field` `.login-btn` | complete login card |
 | Modal | `.modal-overlay` `.modal-panel` | 28px rounded glass dialog |
@@ -178,14 +178,14 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 ### Color tokens
 
 ```css
---accent: #c8a45c;   /* gold primary */
---teal:   #6b9589;   /* teal secondary */
+--accent: #b48ccd;   /* pastel primary */
+--teal:   #6aa055;   /* pastel green */
 --danger: #c4554d;   /* danger */
---text:   #2c2416;   /* main text */
---bg:     #f7f5f0;   /* background */
+--text:   #2a2430;   /* main text */
+--bg:     #f6f4f7;   /* background */
 ```
 
-Dark mode auto-overrides: bg `#1c1c1e`, text `#e8e6e3`, accent `#d4b87a`. Full spec in [`UI.md`](UI.md).
+Dark mode auto-overrides: bg `#1c1c1e`, text `#e8e6e3`, accent `#c8b2e0`. Full spec in [`UI.md`](UI.md).
 
 ## Examples
 

@@ -6,11 +6,11 @@
 
 **一套精致的「三主题玻璃拟态」Web UI 体系**
 
-[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=c8a45c)](https://github.com/NimuStudio/Nimu-glass-ui)
-[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6b9589)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-4a7a6e?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
+[![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=b48ccd)](https://github.com/NimuStudio/Nimu-glass-ui)
+[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6aa055)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-b48ccd?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
 [![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
-[![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f7f5f0?style=flat-square&labelColor=2c2416&color=e8d5a3)](https://github.com/NimuStudio/Nimu-glass-ui)
+[![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f6f4f7?style=flat-square&labelColor=2a2430&color=f9c0d0)](https://github.com/NimuStudio/Nimu-glass-ui)
 
 纯 HTML / CSS / JS · 零构建依赖 · 复制即用
 
@@ -134,7 +134,7 @@ var theme = localStorage.getItem("ysti_theme") || "glass";
 | 组件 | 类名 | 说明 |
 |---|---|---|
 | 玻璃卡片 | `.order-card` | 通用玻璃卡片，hover 泛光 |
-| 主按钮 | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | 金色/青色渐变 |
+| 主按钮 | `.btn-accept` `.btn-confirm` `.btn-checkout` `.btn-save` | 粉彩紫/绿渐变 |
 | 次按钮 | `.btn-cancel` | 轻量按钮 |
 | 登录页 | `.login-overlay` `.login-panel` `.login-field` `.login-btn` | 完整登录卡片 |
 | 弹窗 | `.modal-overlay` `.modal-panel` | 28px 圆角玻璃弹窗 |
@@ -178,14 +178,14 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 ### 颜色变量
 
 ```css
---accent: #c8a45c;   /* 金色主色 */
---teal:   #6b9589;   /* 青色辅助 */
+--accent: #b48ccd;   /* 粉彩主色 */
+--teal:   #6aa055;   /* 粉彩绿辅助 */
 --danger: #c4554d;   /* 危险色 */
---text:   #2c2416;   /* 主文字 */
---bg:     #f7f5f0;   /* 背景 */
+--text:   #2a2430;   /* 主文字 */
+--bg:     #f6f4f7;   /* 背景 */
 ```
 
-深色主题自动覆盖：背景 `#1c1c1e`、文字 `#e8e6e3`、accent `#d4b87a`。完整规范见 [`UI.md`](UI.md)。
+深色主题自动覆盖：背景 `#1c1c1e`、文字 `#e8e6e3`、accent `#c8b2e0`。完整规范见 [`UI.md`](UI.md)。
 
 ## 示例与组件
 
