@@ -7,7 +7,7 @@
 **A refined 3-theme glassmorphism UI system for the Web**
 
 [![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=b48ccd)](https://github.com/NimuStudio/Nimu-glass-ui)
-[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=6aa055)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=558f42)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-b48ccd?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
 [![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
 [![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f6f4f7?style=flat-square&labelColor=2a2430&color=f9c0d0)](https://github.com/NimuStudio/Nimu-glass-ui)
