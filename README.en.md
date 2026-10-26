@@ -262,3 +262,21 @@ Open an [Issue](https://github.com/NimuStudio/Nimu-glass-ui/issues) (bug report 
 **If this UI helps you, give it a ⭐**
 
 </div>
+
+## Changelog
+
+### 2026-10-27
+
+No visual redesign — just a few details that make the kit easier and gentler to use:
+
+- **You can now see keyboard focus.** Previously, tabbing between buttons and
+  inputs gave no visual hint at all — you couldn't tell where focus was.
+  There's now a themed focus ring. It stays out of the way for mouse users.
+- **No more default-blue text selection or scrollbar.** Selection uses the
+  kit's pink, and the scrollbar follows the same soft lilac palette.
+- **Respects "Reduce motion".** If your OS has that accessibility setting on,
+  transitions are turned off automatically — the UI stays fully usable,
+  just without movement.
+- **Dark theme gets its own selection colour** for better contrast.
+
+**No code changes needed** — just replace `assets/ysti-glass.css`.
