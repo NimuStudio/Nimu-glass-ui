@@ -9,7 +9,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=b48ccd)](https://github.com/NimuStudio/Nimu-glass-ui)
 [![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=558f42)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-b48ccd?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
-[![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
+[![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/nimu-glass.css)
 [![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f6f4f7?style=flat-square&labelColor=2a2430&color=f9c0d0)](https://github.com/NimuStudio/Nimu-glass-ui)
 
 纯 HTML / CSS / JS · 零构建依赖 · 复制即用
@@ -22,7 +22,7 @@
 
 Nimu Glass UI 是一套**完整的 Web UI 体系**：玻璃拟态（Glassmorphism）+ 浅色 + 深色三主题一键切换，附带液态玻璃背景、光标泛光、玻璃边缘高光等特效。
 
-它不是一个框架，而是一份**开箱即用的设计资产**：把 `ysti-glass.css` 引入你的页面，就能获得一整套打磨过的组件视觉——卡片、按钮、表单、弹窗、导航、侧边栏、登录页、消息气泡，全部自带三主题适配。
+它不是一个框架，而是一份**开箱即用的设计资产**：把 `nimu-glass.css` 引入你的页面，就能获得一整套打磨过的组件视觉——卡片、按钮、表单、弹窗、导航、侧边栏、登录页、消息气泡，全部自带三主题适配。
 
 ## 截图
 
@@ -71,17 +71,17 @@ python -m http.server 8080
 **方法 A：CDN 一行引入（推荐，无需下载）**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/nimu-glass.css">
 <!-- 可选：液态玻璃背景特效 -->
 <script src="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/liquid-glass.js"></script>
 ```
 
 **方法 B：下载到本地**
 
-把 `assets/ysti-glass.css` 复制到你的项目，然后：
+把 `assets/nimu-glass.css` 复制到你的项目，然后：
 
 ```html
-<link rel="stylesheet" href="ysti-glass.css">
+<link rel="stylesheet" href="nimu-glass.css">
 ```
 
 **最简可运行示例**（保存为 html 打开即可看到效果）：
@@ -92,12 +92,12 @@ python -m http.server 8080
 <head>
 <meta charset="UTF-8">
 <title>我的页面</title>
-<link rel="stylesheet" href="ysti-glass.css">
+<link rel="stylesheet" href="nimu-glass.css">
 </head>
 <body>
   <div class="order-card" style="max-width:380px;margin:48px auto;padding:26px">
     <h3>我的玻璃卡片</h3>
-    <p style="color:var(--text-dim)">引入 ysti-glass.css 即可使用全部组件</p>
+    <p style="color:var(--text-dim)">引入 nimu-glass.css 即可使用全部组件</p>
     <div style="display:flex;gap:10px;margin-top:14px">
       <button class="btn-accept">主操作</button>
       <button class="btn-cancel">取消</button>
@@ -125,7 +125,7 @@ python -m http.server 8080
 主题按钮 + 持久化（localStorage）参考 `index.html` 末尾的 `themeToggle` 示例：
 
 ```js
-var theme = localStorage.getItem("ysti_theme") || "glass";
+var theme = localStorage.getItem("nimu_theme") || "glass";
 // glass → light → dark 循环切换，写入 body class 与 localStorage
 ```
 
@@ -145,7 +145,7 @@ var theme = localStorage.getItem("ysti_theme") || "glass";
   界面依然正常可用，只是不再有位移和渐变过程。
 - **深色主题下的选中色单独调过** —— 深色背景上用浅粉，对比度更好。
 
-以上改动**不需要你改任何代码**，替换 `assets/ysti-glass.css` 即可生效。
+以上改动**不需要你改任何代码**，替换 `assets/nimu-glass.css` 即可生效。
 
 ## 组件清单
 
@@ -218,9 +218,9 @@ box-shadow: 0 8px 32px rgba(0,0,0,.04), inset 0 1px 0 rgba(255,255,255,.5);
 ## 目录结构
 
 ```
-ysti-glass-ui/
+Nimu-glass-ui/
 ├── assets/
-│   ├── ysti-glass.css     # 核心样式（三主题体系，114KB）
+│   ├── nimu-glass.css     # 核心样式（三主题体系，114KB）
 │   └── liquid-glass.js    # WebGL2 液态玻璃背景特效
 ├── examples/
 │   ├── console.html       # 客服工作台完整示例

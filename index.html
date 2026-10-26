@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nimu Glass UI — 三主题玻璃拟态演示</title>
-<link rel="stylesheet" href="assets/ysti-glass.css">
+<link rel="stylesheet" href="assets/nimu-glass.css">
 <style>
 /* 演示页专属布局（演示用，非 UI 体系的一部分） */
 body{padding:0}
@@ -140,7 +140,7 @@ body{padding:0}
         <h2>聊天界面</h2>
         <div class="demo-msg-list">
           <div class="chat-msg received"><div class="chat-msg-avatar">🙋</div><div class="chat-msg-body"><div class="chat-msg-bubble">你好！请问这个怎么用？</div><div class="chat-msg-time">10:32</div></div></div>
-          <div class="chat-msg sent"><div class="chat-msg-body"><div class="chat-msg-bubble">直接引入 ysti-glass.css 就能用了～</div><div class="chat-msg-time">10:33</div></div></div>
+          <div class="chat-msg sent"><div class="chat-msg-body"><div class="chat-msg-bubble">直接引入 nimu-glass.css 就能用了～</div><div class="chat-msg-time">10:33</div></div></div>
           <div class="chat-msg received"><div class="chat-msg-avatar">🙋</div><div class="chat-msg-body"><div class="chat-msg-bubble">太漂亮了，马上去试试！</div><div class="chat-msg-time">10:33</div></div></div>
         </div>
         <div class="demo-chat-input">
@@ -264,13 +264,13 @@ body{padding:0}
 // ============ 三主题切换 ============
 (function () {
   var themeBtn = document.getElementById("themeToggle");
-  var theme = localStorage.getItem("ysti_theme") || "glass";
+  var theme = localStorage.getItem("nimu_theme") || "glass";
   function applyTheme() {
     document.body.classList.remove("light-mode", "dark-mode");
     if (theme === "glass") { if (themeBtn) themeBtn.textContent = "玻璃"; if (window._glassInit) window._glassInit(); }
     else if (theme === "light") { document.body.classList.add("light-mode"); if (themeBtn) themeBtn.textContent = "浅色"; }
     else { document.body.classList.add("dark-mode"); if (themeBtn) themeBtn.textContent = "深色"; }
-    localStorage.setItem("ysti_theme", theme);
+    localStorage.setItem("nimu_theme", theme);
   }
   applyTheme();
   if (themeBtn) {

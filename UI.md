@@ -10,7 +10,7 @@
 | 浅色 | `body.light-mode` | 纯白背景 `#f4f2f6`，元素纯白，**隐藏 canvas**（`body.light-mode canvas{display:none}`），去 blur |
 | 深色 | `body.dark-mode` | 背景 `#14161a`，文字 `#f4f1ea`，accent 变 `#c8b2e0` |
 
-- 切换按钮：`themeToggle`（显示"玻璃/浅色/深色"），localStorage 键 `ysti_theme`
+- 切换按钮：`themeToggle`（显示"玻璃/浅色/深色"），localStorage 键 `nimu_theme`
 - **三主题只换颜色，几何尺寸（圆角/间距/高度）必须一致**
 
 ## 2. 圆角规范（核心）

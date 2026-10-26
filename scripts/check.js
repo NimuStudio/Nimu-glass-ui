@@ -13,12 +13,12 @@ function fail(msg) {
 function ok(msg) { console.log("✅ " + msg); }
 
 // 1. CSS 括号平衡
-const cssPath = path.join(root, "assets", "ysti-glass.css");
+const cssPath = path.join(root, "assets", "nimu-glass.css");
 const css = fs.readFileSync(cssPath, "utf8");
 const opens = (css.match(/{/g) || []).length;
 const closes = (css.match(/}/g) || []).length;
-if (opens === closes) ok(`ysti-glass.css 花括号平衡 (${opens})`);
-else fail(`ysti-glass.css 花括号不平衡: {=${opens} }=${closes}`);
+if (opens === closes) ok(`nimu-glass.css 花括号平衡 (${opens})`);
+else fail(`nimu-glass.css 花括号不平衡: {=${opens} }=${closes}`);
 
 // 2. HTML 标签配对（忽略 script/style 内部）
 const VOID = new Set(["area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"]);

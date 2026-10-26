@@ -24,7 +24,7 @@ node --check examples/widget.js
    - 三主题适配（玻璃默认 / `light-mode` / `dark-mode`）
    - 复用 CSS 变量，不硬编码颜色/圆角
 2. 样式保持现有风格（压缩单行 + 关键块注释）
-3. 修改 `assets/ysti-glass.css` 后确保花括号平衡
+3. 修改 `assets/nimu-glass.css` 后确保花括号平衡
 
 ## 提交流程
 

@@ -9,7 +9,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/NimuStudio/Nimu-glass-ui?style=flat-square&label=Stars&color=b48ccd)](https://github.com/NimuStudio/Nimu-glass-ui)
 [![License](https://img.shields.io/github/license/NimuStudio/Nimu-glass-ui?style=flat-square&label=License&color=558f42)](https://github.com/NimuStudio/Nimu-glass-ui/blob/main/LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Online%20Demo-NimuStudio.github.io-b48ccd?style=flat-square)](https://NimuStudio.github.io/Nimu-glass-ui/)
-[![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css)
+[![CDN](https://img.shields.io/badge/CDN-jsDelivr-cc3534?style=flat-square)](https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/nimu-glass.css)
 [![Pure CSS/JS](https://img.shields.io/badge/pure-HTML%2FCSS%2FJS-f6f4f7?style=flat-square&labelColor=2a2430&color=f9c0d0)](https://github.com/NimuStudio/Nimu-glass-ui)
 
 Pure HTML / CSS / JS · Zero build dependencies · Copy & use
@@ -22,7 +22,7 @@ Pure HTML / CSS / JS · Zero build dependencies · Copy & use
 
 Nimu Glass UI is a complete web UI system: **glassmorphism + light + dark** themes with one-click switching, plus liquid glass background, cursor glow, and glass edge-highlight effects.
 
-It is not a framework — it is a **ready-to-use design asset**. Drop `ysti-glass.css` into your page and you get a polished set of components — cards, buttons, forms, modals, navigation, sidebar, login page, chat bubbles — all with built-in 3-theme adaptation.
+It is not a framework — it is a **ready-to-use design asset**. Drop `nimu-glass.css` into your page and you get a polished set of components — cards, buttons, forms, modals, navigation, sidebar, login page, chat bubbles — all with built-in 3-theme adaptation.
 
 ## Screenshots
 
@@ -71,17 +71,17 @@ Click the top-right button to switch themes; hover over cards to see edge glow. 
 **Way A: CDN (recommended, no download)**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/ysti-glass.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/nimu-glass.css">
 <!-- optional: liquid glass background -->
 <script src="https://cdn.jsdelivr.net/gh/NimuStudio/Nimu-glass-ui@main/assets/liquid-glass.js"></script>
 ```
 
 **Way B: Download locally**
 
-Copy `assets/ysti-glass.css` into your project, then:
+Copy `assets/nimu-glass.css` into your project, then:
 
 ```html
-<link rel="stylesheet" href="ysti-glass.css">
+<link rel="stylesheet" href="nimu-glass.css">
 ```
 
 **Minimal runnable example** (save as an .html file and open):
@@ -92,12 +92,12 @@ Copy `assets/ysti-glass.css` into your project, then:
 <head>
 <meta charset="UTF-8">
 <title>My page</title>
-<link rel="stylesheet" href="ysti-glass.css">
+<link rel="stylesheet" href="nimu-glass.css">
 </head>
 <body>
   <div class="order-card" style="max-width:380px;margin:48px auto;padding:26px">
     <h3>My glass card</h3>
-    <p style="color:var(--text-dim)">Just include ysti-glass.css and all components are ready.</p>
+    <p style="color:var(--text-dim)">Just include nimu-glass.css and all components are ready.</p>
     <div style="display:flex;gap:10px;margin-top:14px">
       <button class="btn-accept">Primary</button>
       <button class="btn-cancel">Cancel</button>
@@ -125,7 +125,7 @@ No initialization needed — styles work out of the box.
 Persistent toggle (localStorage) — see the `themeToggle` example at the end of `index.html`:
 
 ```js
-var theme = localStorage.getItem("ysti_theme") || "glass";
+var theme = localStorage.getItem("nimu_theme") || "glass";
 // cycle glass → light → dark, write to body class + localStorage
 ```
 
@@ -200,9 +200,9 @@ Dark mode auto-overrides: bg `#14161a`, text `#f4f1ea`, accent `#c8b2e0`. Full s
 ## Structure
 
 ```
-ysti-glass-ui/
+Nimu-glass-ui/
 ├── assets/
-│   ├── ysti-glass.css     # core styles (3 themes, 114KB)
+│   ├── nimu-glass.css     # core styles (3 themes, 114KB)
 │   └── liquid-glass.js    # WebGL2 liquid glass background
 ├── examples/
 │   ├── console.html       # customer-service console example
@@ -279,4 +279,4 @@ No visual redesign — just a few details that make the kit easier and gentler t
   just without movement.
 - **Dark theme gets its own selection colour** for better contrast.
 
-**No code changes needed** — just replace `assets/ysti-glass.css`.
+**No code changes needed** — just replace `assets/nimu-glass.css`.

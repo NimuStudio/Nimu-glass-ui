@@ -10,7 +10,7 @@
 | Light | `body.light-mode` | solid background `#f4f2f6`, solid white elements, **canvas hidden** (`body.light-mode canvas{display:none}`), no blur |
 | Dark | `body.dark-mode` | background `#14161a`, text `#f4f1ea`, accent → `#c8b2e0` |
 
-- Toggle button: `themeToggle` (shows "玻璃/浅色/深色"), localStorage key `ysti_theme`
+- Toggle button: `themeToggle` (shows "玻璃/浅色/深色"), localStorage key `nimu_theme`
 - **Themes only change colors — geometry (radius / spacing / heights) must stay identical**
 
 ## 2. Border Radius Scale (core)

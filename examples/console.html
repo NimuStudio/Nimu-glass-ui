@@ -1714,7 +1714,7 @@ body.dark-mode .modal-card{background:rgba(35,36,40,.95)!important;border:1px so
 // Theme toggle
 (function(){
  var themeBtn=document.getElementById("themeToggle");
- var theme=localStorage.getItem("ysti_theme")||"glass";
+ var theme=localStorage.getItem("nimu_theme")||"glass";
  function applyTheme(){
   document.body.classList.remove("light-mode","dark-mode");
   if(theme==="glass"){
@@ -1727,7 +1727,7 @@ body.dark-mode .modal-card{background:rgba(35,36,40,.95)!important;border:1px so
    document.body.classList.add("dark-mode");
    if(themeBtn)themeBtn.textContent="深色";
   }
-  localStorage.setItem("ysti_theme",theme);
+  localStorage.setItem("nimu_theme",theme);
  }
  applyTheme();
  if(themeBtn){
