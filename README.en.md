@@ -16,6 +16,8 @@ Pure HTML / CSS / JS · Zero build dependencies · Copy & use
 
 </div>
 
+> Maintained by [Nimu Studio](https://nimustudio.cn)
+
 ---
 
 ## What is it
