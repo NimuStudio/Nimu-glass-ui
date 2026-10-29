@@ -280,3 +280,12 @@ Nimu-glass-ui/
 **如果这套 UI 对你有帮助，点个 ⭐ 支持一下**
 
 </div>
+
+---
+
+## 联系
+
+- 官网：[nimustudio.cn](https://nimustudio.cn)
+- GitHub：[@NimuStudio](https://github.com/NimuStudio)
+- QQ 交流群：**`1097466590`**
+- 爱发电：[☕ 请我喝杯咖啡](https://ifdian.net/a/NimuStudio)

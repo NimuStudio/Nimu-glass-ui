@@ -282,3 +282,12 @@ No visual redesign — just a few details that make the kit easier and gentler t
 - **Dark theme gets its own selection colour** for better contrast.
 
 **No code changes needed** — just replace `assets/nimu-glass.css`.
+
+---
+
+## Contact
+
+- Website: [nimustudio.cn](https://nimustudio.cn)
+- GitHub: [@NimuStudio](https://github.com/NimuStudio)
+- QQ Group: **`1097466590`**
+- Afdian: [☕ Buy me a coffee](https://ifdian.net/a/NimuStudio)
